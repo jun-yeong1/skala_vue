@@ -12,6 +12,7 @@ const isVisible = ref(true)
       <p>v-show 상자</p>
       <p>조건이 false가 되면 CSS display: none이 붙습니다.</p>
     </div>
+    <div>isVisible 확인 : {{ isVisible }}</div>
   </div>
 </template>
 

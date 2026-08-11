@@ -1,0 +1,139 @@
+.page-bg {
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px;
+    background: #f3f4f6;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.dashboard-wrapper {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    padding: 28px 28px 24px;
+    box-sizing: border-box;
+}
+
+.dashboard-wrapper h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #eceef1;
+    color: #1f2328;
+}
+
+.search-box h3,
+.list-box h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1f2328;
+    margin: 0 0 10px;
+}
+
+.search-box {
+    margin-bottom: 24px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dfe1e5;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #8fb2ff;
+}
+
+.hint {
+    margin: 8px 0 0;
+    font-size: 0.8rem;
+    color: #8b8f96;
+}
+
+.hint strong {
+    color: #4b5563;
+}
+
+.weather-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #eceef1;
+    cursor: pointer;
+}
+
+.weather-card:last-child {
+    border-bottom: none;
+}
+
+.weather-info h4 {
+    margin: 0 0 4px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #1f2328;
+}
+
+.weather-info p {
+    margin: 0 0 8px;
+    font-size: 0.82rem;
+    color: #8b8f96;
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+.badge.hot {
+    background: #fdecea;
+    color: #e5484d;
+}
+
+.badge.cool {
+    background: #e8f1fd;
+    color: #939c32;
+}
+
+.badge.ice {
+    background: #e8f1fd;
+    color: #4292dd;
+}
+
+.btn-detail {
+    flex-shrink: 0;
+    padding: 7px 14px;
+    border: 1px solid #dfe1e5;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #4b5563;
+    font-size: 0.82rem;
+    cursor: pointer;
+}
+
+.btn-detail:hover {
+    background: #f7f8fa;
+}
+
+.status-bar {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #e9f9ef;
+    color: #2e9e5b;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+}

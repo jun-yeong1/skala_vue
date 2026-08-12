@@ -6,7 +6,7 @@ import PracticeApp from './PracticeApp.vue';
 // 'practice' : 강의 예제
 // 'exercise' : 과제 - 디폴트
 const MODE = 'exercise'
-//const MODE = 'practice'
+// const MODE = 'practice'
 </script>
 
 <template>

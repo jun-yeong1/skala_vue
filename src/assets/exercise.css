@@ -1,9 +1,8 @@
 .page-bg {
     display: flex;
     justify-content: center;
-    padding: 40px 16px;
+    padding: 24px 16px;
     background: #f3f4f6;
-    min-height: 100vh;
     box-sizing: border-box;
 }
 
@@ -136,4 +135,143 @@
     text-align: center;
     font-size: 0.85rem;
     font-weight: 600;
+}
+
+/* ---- 라우팅 네비게이션 (과제4, 과제5) ---- */
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #eceef1;
+}
+
+.nav-item {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #8b8f96;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: color 0.15s, background 0.15s;
+}
+
+.nav-item:hover {
+    color: #1f2328;
+    background: #f3f4f6;
+}
+
+.nav-item.router-link-active {
+    color: #3b7cf6;
+    background: #e8f1fd;
+}
+
+.divider {
+    color: #dfe1e5;
+    font-size: 0.8rem;
+}
+
+/* ---- 상세보기 화면 (WeatherDetailView) ---- */
+.detail-container h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 12px;
+    color: #1f2328;
+}
+
+.detail-container hr {
+    border: none;
+    border-top: 1px solid #eceef1;
+    margin: 0 0 16px;
+}
+
+.info-card {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 18px;
+}
+
+.info-card h4 {
+    margin: 0 0 10px;
+    font-size: 0.95rem;
+    color: #1f2328;
+}
+
+.info-card p {
+    margin: 0 0 6px;
+    font-size: 0.85rem;
+    color: #4b5563;
+}
+
+.info-card p:last-child {
+    margin-bottom: 0;
+}
+
+.back-btn,
+.home-btn,
+.home-button {
+    padding: 8px 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #4b5563;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.back-btn:hover,
+.home-btn:hover,
+.home-button:hover {
+    background: #f7f8fa;
+}
+
+/* ---- 소개 화면 (WeatherAboutView) ---- */
+.description-box {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 18px;
+    font-size: 0.85rem;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* ---- 404 화면 (NotFoundView) ---- */
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 16px;
+}
+
+.not-found-content {
+    text-align: center;
+}
+
+.error-icon {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+}
+
+.error-icon::before {
+    content: '⚠️';
+}
+
+.not-found-content h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1f2328;
+    margin: 0 0 10px;
+}
+
+.not-found-content p {
+    font-size: 0.85rem;
+    color: #8b8f96;
+    margin: 0 0 20px;
+    line-height: 1.5;
 }

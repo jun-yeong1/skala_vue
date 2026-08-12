@@ -30,6 +30,12 @@ import WatchMulti from './components/practices/basic/WatchMulti.vue'
 import WatchDeep from './components/practices/basic/WatchDeep.vue'
 import WatchReactive from './components/practices/basic/WatchReactive.vue'
 import WatchEffect from './components/practices/basic/WatchEffect.vue'
+import LifecycleParent from './components/practices/component/LifecycleParent.vue'
+import PropsEmitsParent from './components/practices/component/PropsEmitsParent.vue'
+import SlotDefaultParent from './components/practices/component/SlotDefaultParent.vue'
+import SlotNamedParent from './components/practices/component/SlotNamedParent.vue'
+import SlotScopedParent from './components/practices/component/SlotScopedParent.vue'
+import StoreCounter from './components/practices/library/StoreCounter.vue'
 </script>
 
 <template>
@@ -69,6 +75,12 @@ import WatchEffect from './components/practices/basic/WatchEffect.vue'
     <WatchDeep />
     <WatchReactive />
     <WatchEffect />
+    <LifecycleParent />
+    <PropsEmitsParent />
+    <SlotDefaultParent />
+    <SlotNamedParent />
+    <SlotScopedParent />
+    <StoreCounter />
   </div>
 </template>
 

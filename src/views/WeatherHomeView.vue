@@ -51,28 +51,24 @@ const handleDetailJump = (id) => {
 </script>
 
 <template>
-    <div class="page-bg">
-        <div class="dashboard-wrapper">
-            <section class="search-box">
-                <BaseDashboardCard>
-                    <SearchBar :current-query="searchQuery"
-                        @update-query="(val) => (searchQuery = val)" />
-                </BaseDashboardCard>
-            </section>
-            <section class="list-box">
-                <BaseDashboardCard>
-                    <h3>지역별 날씨 현황</h3>
-                    <WeatherCard v-for="item in filteredWeatherList" :key="item.id"
-                        :city-item="item"
-                        class="weather-card"
-                        @select-card="(msg) => selectedCityInfo = msg"
-                        @click-detail="handleDetailJump(item.id)" />
-                    <p v-if="filteredWeatherList.length === 0" style="text-align: center; color: #e74c3c; padding: 10px 0">
-                        검색 결과가 없습니다.
-                    </p>
-                </BaseDashboardCard>
-            </section>
-            <div class="status-bar">{{ selectedCityInfo }}</div>
-        </div>
-    </div>
+    <section class="search-box">
+        <BaseDashboardCard>
+            <SearchBar :current-query="searchQuery"
+                @update-query="(val) => (searchQuery = val)" />
+        </BaseDashboardCard>
+    </section>
+    <section class="list-box">
+        <BaseDashboardCard>
+            <h3>지역별 날씨 현황</h3>
+            <WeatherCard v-for="item in filteredWeatherList" :key="item.id"
+                :city-item="item"
+                class="weather-card"
+                @select-card="(msg) => selectedCityInfo = msg"
+                @click-detail="handleDetailJump(item.id)" />
+            <p v-if="filteredWeatherList.length === 0" style="text-align: center; color: #e74c3c; padding: 10px 0">
+                검색 결과가 없습니다.
+            </p>
+        </BaseDashboardCard>
+    </section>
+    <div class="status-bar">{{ selectedCityInfo }}</div>
 </template>

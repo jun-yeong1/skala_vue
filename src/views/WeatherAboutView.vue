@@ -8,7 +8,7 @@ const handleGoHome = () => { router.push('/') }
     <div>
         <h3> 서비스 소개</h3>
         <hr />
-        <div class="description-box"> ... 소개 문구와 목록 ... </div>
+        <div class="description-box"> 실시간 날씨를 나타내는 서비스 </div>
         <button @click="handleGoHome" class="home-btn">
             대시보드 홈으로 이동</button>
     </div>

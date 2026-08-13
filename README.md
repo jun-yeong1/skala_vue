@@ -12,7 +12,7 @@
 
 ### 여행지 목록
 
-대륙별 대표 여름 휴양지 5곳 (`stores/travelStore.js`의 `DESTINATIONS`):
+대륙별 대표 여름 휴양지 + 국내 여행지 (`stores/travelStore.js`의 `DESTINATIONS`):
 
 | 여행지   | 국가   |
 | -------- | ------ |
@@ -21,6 +21,8 @@
 | 푸켓     | 태국   |
 | 칸쿤     | 멕시코 |
 | 후쿠오카 | 일본   |
+| 부산     | 한국   |
+| 경주     | 한국   |
 
 ### 새 기능 — 옷차림·우산 추천 (하드코딩)
 
@@ -53,7 +55,7 @@ src/
   stores/
     travelStore.js              # 도시별 현재+예보 데이터 fetch/캐싱
   utils/
-    weatherTheme.js             # 날씨 상태별 그라디언트/아이콘 URL
+    weatherTheme.js             # 날씨 상태별 아이콘 URL
     weatherAdvice.js            # 기온별 옷차림, 우산 추천, 5일 예보 기반 주간 추천 하드코딩 테이블
 ```
 

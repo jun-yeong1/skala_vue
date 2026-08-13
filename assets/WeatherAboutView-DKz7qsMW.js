@@ -1,1 +1,0 @@
-import{a as e,f as t,h as n,l as r}from"./index-DXf-f9XY.js";var i={__name:`WeatherAboutView`,setup(i){let a=e(),o=()=>{a.push(`/`)};return(e,i)=>(n(),t(`div`,null,[i[0]||=r(`h3`,null,`서비스 소개`,-1),i[1]||=r(`hr`,null,null,-1),i[2]||=r(`div`,{class:`description-box`},`실시간 날씨를 나타내는 서비스`,-1),r(`button`,{onClick:o,class:`home-btn`},`대시보드 홈으로 이동`)]))}};export{i as default};

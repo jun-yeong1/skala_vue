@@ -33,9 +33,7 @@ const LEVEL_PRIORITY = { best: 0, good: 1, caution: 2, bad: 3 }
 const topPick = computed(() => {
   const candidates = destinations.value.filter((d) => d.recommendation)
   if (candidates.length === 0) return null
-  return candidates.reduce((top, d) =>
-    LEVEL_PRIORITY[d.recommendation.level] < LEVEL_PRIORITY[top.recommendation.level] ? d : top,
-  )
+  return candidates.reduce((top, d) => (LEVEL_PRIORITY[d.recommendation.level] < LEVEL_PRIORITY[top.recommendation.level] ? d : top))
 })
 
 // 추천 등급이 좋은 여행지가 그리드 상단에 오도록 정렬 (아직 로딩/실패한 곳은 뒤로)
@@ -66,12 +64,7 @@ function goDetail(cityId) {
       <p class="hero-subtitle">실시간 날씨를 확인하고 다음 여행지를 골라보세요</p>
     </header>
 
-    <section
-      v-if="topPick"
-      class="top-pick"
-      :style="{ background: getWeatherTheme(topPick.weather.main).gradient }"
-      @click="goDetail(topPick.id)"
-    >
+    <section v-if="topPick" class="top-pick" :style="{ background: getWeatherTheme(topPick.weather.main).gradient }" @click="goDetail(topPick.id)">
       <span class="top-pick-label">⭐ 이번 주 최고 추천 여행지</span>
       <div class="top-pick-body">
         <div class="top-pick-info">

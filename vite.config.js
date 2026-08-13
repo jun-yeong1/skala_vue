@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/skala_vue/',
   plugins: [
     vue(),
     vueDevTools(),
@@ -23,9 +24,4 @@ export default defineConfig({
   build: {
     outDir: 'dist', // 최종 정적 리소스(HTML, JS, CSS)가 저장될 출력 디렉토리명 지정
   },
-  "scripts": {
-    "dev": "vite",
-    "build:staging": "vite build --mode staging",
-    "build:production": "vite build --mode production"
-  }
 })

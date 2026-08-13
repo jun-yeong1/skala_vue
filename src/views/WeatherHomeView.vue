@@ -18,7 +18,7 @@ const selectedCityInfo = ref('카드를 클릭하거나 검색')
 
 const isLoading = ref(false) // api 데이터
 // api key, url 처리
-const API_KEY = '8a661c87be7f90f95a429c3fd9bb6094'
+const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather'
 
 onMounted(() => {

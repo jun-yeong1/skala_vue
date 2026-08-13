@@ -18,6 +18,16 @@ const routes = [
     component: () => import('../views/WeatherDetailView.vue'),
   },
   {
+    path: '/final',
+    name: 'FinalWeatherHome',
+    component: () => import('../views/final/FinalWeatherHomeView.vue'),
+  },
+  {
+    path: '/final/:cityId',
+    name: 'FinalWeatherDetail',
+    component: () => import('../views/final/FinalWeatherDetailView.vue'),
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
     component: () => import('../views/NotFoundView.vue'),

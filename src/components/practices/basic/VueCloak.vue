@@ -1,7 +1,6 @@
 <script setup>
-import {ref} from 'vue'
+import { ref } from 'vue'
 const message = ref('느린 네트워크 출력 메세지')
-
 </script>
 
 <template>
@@ -14,7 +13,7 @@ const message = ref('느린 네트워크 출력 메세지')
 </template>
 
 <style scoped>
-    [v-cloak] {
-        display:none !important;
-    }
+[v-cloak] {
+  display: none !important;
+}
 </style>

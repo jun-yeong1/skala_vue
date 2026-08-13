@@ -1,12 +1,18 @@
 <script setup>
 import { reactive } from 'vue'
 
-const userReactive = reactive({name: '이순신', age: 30,})
-const celebrateReactive = () => {userReactive.age++}
+const userReactive = reactive({ name: '이순신', age: 30 })
+const celebrateReactive = () => {
+  userReactive.age++
+}
 
 const items = reactive(['사과', '바나나'])
-const addItem = () => {items.push(`과일 ${items.length + 1}`)}
-const removeItem = (index) => {items.splice(index, 1)}
+const addItem = () => {
+  items.push(`과일 ${items.length + 1}`)
+}
+const removeItem = (index) => {
+  items.splice(index, 1)
+}
 </script>
 
 <template>

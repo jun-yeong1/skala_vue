@@ -1,15 +1,15 @@
 <script setup>
 const handleLink = () => {
-    alert('링크 클릭했지만 페이지 이동 안함')
+  alert('링크 클릭했지만 페이지 이동 안함')
 }
 const handleBox = () => {
-    alert('부모 박스 클릭')
+  alert('부모 박스 클릭')
 }
 const handleChild1 = () => {
-    alert('자식1 클릭')
+  alert('자식1 클릭')
 }
 const handleChild2 = () => {
-    alert('자식2 클릭')
+  alert('자식2 클릭')
 }
 </script>
 

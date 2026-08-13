@@ -11,12 +11,12 @@ const content = '안녕하세요! <strong>Skala-Vue</strong> 강의입니다.'
     <br />
 
     <h3>2) v-text 디렉티브 결과:</h3>
-    <p v-pre>아래의 코드 -> v-text="'출력: ' + content" </p>
+    <p v-pre>아래의 코드 -> v-text="'출력: ' + content"</p>
     <p v-text="'출력: ' + content"></p>
     <br />
 
     <h3>3) v-html 결과 비교:</h3>
-    <p v-pre>아래의 코드 -> v-html="content" </p>
+    <p v-pre>아래의 코드 -> v-html="content"</p>
     <p v-html="content"></p>
   </div>
 </template>

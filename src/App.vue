@@ -1,6 +1,6 @@
 <script setup>
 import ExerciseApp from './ExerciseApp.vue'
-import PracticeApp from './PracticeApp.vue';
+import PracticeApp from './PracticeApp.vue'
 
 // 화면 전환
 // 'practice' : 강의 예제

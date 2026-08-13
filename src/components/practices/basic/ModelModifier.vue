@@ -21,7 +21,8 @@ const Nochain = ref('')
       <input type="text" v-model.lazy="lazyText" placeholder="입력 후 Enter 또는 포커스 변경" />
       <p>
         실시간이 아닌 확정된 값: <strong>{{ lazyText }}</strong>
-      </p><br>
+      </p>
+      <br />
       <p>.lazy 수식어 없을 때 비교</p>
       <input type="text" v-model="NolazyText" placeholder="입력 후 Enter 또는 포커스 변경" />
       <p>
@@ -38,7 +39,8 @@ const Nochain = ref('')
       </p>
       <p>
         데이터 타입: <strong>{{ typeof age }}</strong>
-      </p><br>
+      </p>
+      <br />
       <p>형변환을 하지 않을 경우 숫자 입력시</p>
       <input type="text" v-model="Nonumber" placeholder="숫자 입력해보세요" />
       <p>
@@ -58,8 +60,9 @@ const Nochain = ref('')
       </p>
       <p>
         문자열 길이: <strong>{{ userEmail.length }}</strong>
-      </p><br>
-      
+      </p>
+      <br />
+
       <p>공백 제거를 하지 않을 경우</p>
       <input type="text" v-model="Notrim" placeholder="앞뒤 공백을 포함해 입력해 보세요" />
       <p>
@@ -81,7 +84,8 @@ const Nochain = ref('')
       </p>
       <p>
         데이터 타입: <strong>{{ typeof chain }}</strong>
-      </p><br>
+      </p>
+      <br />
       <p>수식어를 적용하지 않은 경우</p>
       <input type="text" v-model="Nochain" placeholder="공백과 숫자를 섞어 입력해 보세요" />
       <p>

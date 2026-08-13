@@ -5,12 +5,12 @@ const count = ref(0)
 const name = ref('홍길동')
 const isActive = ref(true)
 const items = ref(['사과', '바나나', '포도'])
-const user = ref({name: '이순신', age: 30,})
+const user = ref({ name: '이순신', age: 30 })
 const increaseRef = () => {
-    count.value++
+  count.value++
 }
 const changeUserName = () => {
-    user.value.name = '장보고'
+  user.value.name = '장보고'
 }
 </script>
 <template>

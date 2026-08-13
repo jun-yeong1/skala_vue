@@ -36,11 +36,14 @@ import SlotDefaultParent from './components/practices/component/SlotDefaultParen
 import SlotNamedParent from './components/practices/component/SlotNamedParent.vue'
 import SlotScopedParent from './components/practices/component/SlotScopedParent.vue'
 import StoreCounter from './components/practices/library/StoreCounter.vue'
+import AxiosWeather from './components/practices/library/AxiosWeather.vue'
+import AxiosJson from './components/practices/library/AxiosJson.vue'
+import ElementPlus from './components/practices/library/ElementPlus.vue'
 </script>
 
 <template>
   <h1>Hello Skala-Vue</h1>
-  <br>
+  <br />
   <div class="practice-section">
     <h1>1. 학습환경구성</h1>
     <hr />
@@ -81,10 +84,13 @@ import StoreCounter from './components/practices/library/StoreCounter.vue'
     <SlotNamedParent />
     <SlotScopedParent />
     <StoreCounter />
+    <AxiosWeather />
+    <AxiosJson />
+    <ElementPlus />
   </div>
 </template>
 
 <style>
-/* 외부 스타일 들고오기 */ 
+/* 외부 스타일 들고오기 */
 @import '@/assets/practice.css';
 </style>

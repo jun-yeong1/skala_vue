@@ -26,6 +26,9 @@ coverage
 
 *.tsbuildinfo
 
+# Env
+.env
+
 .eslintcache
 
 # Cypress

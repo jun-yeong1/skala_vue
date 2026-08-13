@@ -3,7 +3,7 @@ import { ref } from 'vue'
 
 const count = ref(0)
 const showAlert = () => {
-    alert('함수 호출 확인')
+  alert('함수 호출 확인')
 }
 </script>
 

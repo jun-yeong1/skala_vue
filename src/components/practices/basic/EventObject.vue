@@ -3,12 +3,12 @@ import { ref } from 'vue'
 
 const position = ref('')
 const tagname = ref('')
-// 
+//
 const getPosition = (e) => {
-    position.value = `좌표 X: ${e.clientX}, 좌표 Y: ${e.clientY}`
+  position.value = `좌표 X: ${e.clientX}, 좌표 Y: ${e.clientY}`
 }
 const getTagname = (name, e) => {
-    tagname.value = `대상 태그 : ${name} / 태그명: ${e.target.tagName}`
+  tagname.value = `대상 태그 : ${name} / 태그명: ${e.target.tagName}`
 }
 </script>
 
